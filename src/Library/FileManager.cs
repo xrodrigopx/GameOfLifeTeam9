@@ -7,7 +7,7 @@ namespace GameOfLife
     {
         public bool[,] LoadBoard(string filename)
         {
-            string content = File.ReadAllText(@"C:\Users\rperdomo\Desktop\PII_Game_Of_Life-master\assets\board.txt");
+            string content = File.ReadAllText(@"C:\Users\Rodrigo\Documents\GitHub\GameOfLifeTeam9\assets\board.txt");
             string[] contentLines = content.Split('\n');
             bool[,] board = new bool[contentLines.Length, contentLines[0].Length];
             for (int  y=0; y<contentLines.Length;y++)
